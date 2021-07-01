@@ -1,0 +1,42 @@
+@font-face {
+  font-family: "Mulish";
+  src: url("./Montserrat/Montserrat-Medium.ttf");
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Mulish";
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  background-color: #eee;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow-y: hidden;
+  height: 100vh;
+  width: 100vw;
+}
+#centerDiv {
+  width: 100%;
+  display: flex;
+  overflow-y: hidden;
+  overflow-x: scroll;
+  cursor: pointer;
+  scrollbar-width: none;
+}
+img {
+  margin: 1rem;
+  border-radius: 0.8rem;
+  transition: transform 0.3s ease-in-out;
+}
+img:hover {
+  transform: scale(0.98);
+  border-radius: 0.8rem;
+}
+#centerDiv::-webkit-scrollbar {
+  overflow: hidden;
+}

@@ -1,0 +1,211 @@
+@font-face {
+  font-family: 'Poppins';
+  src: url('./font/Poppins-Regular.ttf');
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins',sans-serif;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  width: 100vw;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  overflow-x: hidden;
+  padding: 1rem;
+  background-color: #f6f6f6;
+}
+.components{
+  width: 100%;
+  height: 10rem;
+  padding: 0 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+
+}
+.add , .delAll{
+  font-size: 1.4rem;
+  font-weight: 500;
+  background: #302d2b;
+  color: #fff;
+  border: none;
+  outline: none;
+  border-radius: 2rem;
+  padding: .8rem 2rem;
+  cursor: pointer;
+  transition:  all .3s linear;
+}
+
+.add .fa-plus{
+  color: rgb(75, 185, 12);
+}
+
+.delAll .fa-trash-alt{
+  color: rgb(255, 0, 106);
+}
+
+.searchBar{
+  position: relative;
+}
+.search{
+  width: 26rem;
+  padding: .8rem 1.6rem;
+  font-size: 1.4rem;
+  font-weight: 500;
+  background-color: #302d2b;
+  outline: none;
+  border: none;
+  color: #fff;    
+  border-radius: 2rem;
+  transition: all .3s linear;
+}
+
+.fa-search{
+  position: absolute;
+  right: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 1.6rem;
+  color: #000;
+  
+}
+.search::placeholder{
+  color:#fff;
+  font-family: 'Poppins';
+}
+
+
+.add:hover, .delAll:hover , .search:hover{
+  box-shadow: 0 0 2rem .2rem rgba(0,0,0,.2);
+}
+.add:hover{
+
+  letter-spacing: .1rem;
+}
+
+.delAll:hover{
+
+  letter-spacing: .1rem;
+}
+
+.add:active .delAll.active{
+  transform: scale(.98);
+}
+
+.searchBar .fa-search{
+  z-index: 3;
+  color: rgb(14, 179, 255);
+
+}
+.note {
+  background-color: #fff;
+  box-shadow: 0 0 1rem 0.4rem rgba(0, 0, 0, 0.1);
+  margin: 3rem 2rem;
+  height: 25rem;
+  width: 25rem;
+}
+.note .tools {
+  background-color: #302d2b;
+  display: flex;
+  justify-content: flex-end;
+  padding: 0.5rem;
+}
+.note .tools button {
+  background-color: transparent;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  font-size: 1.6rem;
+  margin-left: 0.8rem;
+  transition: all 0.3s ease-in-out;
+}
+.fa-trash-alt:hover {
+  color: rgb(247, 109, 109);
+}
+.fa-edit:hover {
+  color: rgb(83, 197, 83);
+}
+.note .tools button:focus {
+  outline: none;
+}
+.note textarea {
+  outline: none;
+  font-family: inherit;
+  font-size: 1.2rem;
+  border: none;
+  height: 22rem;
+  width: 100%;
+  padding: 2rem;
+}
+.main {
+  padding: 2rem;
+  font-size: 1.2rem;
+  word-wrap: break-word;
+}
+.hidden {
+  display: none;
+}
+/* search */
+.search {
+  position: relative;
+}
+.search .input {
+  background-color: #302d2b;
+  border: 0;
+  font-size: 1.4rem;
+  padding: 1.5rem;
+  height: 2.8rem;
+  width: 30rem;
+  border-radius: 0.4rem;
+  transition: width 0.3s ease;
+}
+.btn {
+  color: #fff;
+  cursor: pointer;
+  font-size: 1.4rem;
+  border: 0;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 1rem;
+  transition: transform 0.3s ease;
+  outline: none;
+}
+.btn:focus,
+.input:focus {
+  outline: none;
+  color: #fff;
+}
+@media (max-width: 940) {
+  .note {
+    height: 20rem;
+    width: 30rem;
+  }
+}
+@media (max-width: 768px) {
+  .note {
+    height: 25rem;
+    width: 45rem;
+  }
+}
+@media (max-width: 450px) {
+  body{
+    padding: 1rem 0rem;
+  }
+   .search{
+     width: 100%;
+    margin: 1rem 0rem;
+    }
+    .note{
+      margin: 5rem 2rem;
+    }
+}

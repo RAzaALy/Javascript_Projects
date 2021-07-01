@@ -1,0 +1,106 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+:root {
+  --progress-empty: #e0e0e0;
+  --progress-fill: #3498db;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background-color: #f6f7fb;
+  font-family: "ubuntu";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.container {
+  text-align: center;
+}
+
+.progress-container {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  max-width: 100%;
+  width: 35rem;
+  margin-bottom: 3rem;
+}
+
+.progress{
+    background-color: var(--progress-fill);
+    position: absolute;
+    top: 50%;
+    left: 0%;
+    transform: translateY(-50%);
+    height: .2rem;
+    width: 0;
+    z-index: -1;
+    transition: all .4s ease;
+     
+}
+.progress-container::before{
+    content: "";
+    background-color: var(--progress-empty);
+    position: absolute;
+    top: 50%;
+    left: 0%;
+    transform: translateY(-50%);
+    height: .2rem;
+    width: 100%;
+    z-index: -1;
+}
+
+.circle{
+    background-color: #fff;
+    color: #999;
+    border-radius: 50%;
+    height: 2rem;
+    width: 2rem;
+    display: grid;
+    place-items: center;
+    border: .2rem solid #e0e0e0;
+    transition: .4s ease;
+}
+
+.circle.active{
+    border-color: #3498db;
+
+}
+
+
+.btn{
+    background-color: var(--progress-fill);
+    color: #fff;
+    border: 0;
+    outline: none;
+    border-radius: .6rem;
+    cursor: pointer;
+    font-family: 'ubuntu';
+    padding: .8rem 3rem;
+    margin: .4rem;
+    font-size: 1.4rem;
+}
+
+.btn:active{
+    transform: scale(0.98);
+
+}
+
+.btn:focus{
+    outline: none;
+}
+
+.btn:disabled{
+    background-color: var(--progress-empty);
+}

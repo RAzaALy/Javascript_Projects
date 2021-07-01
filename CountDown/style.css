@@ -1,0 +1,226 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #fff;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    /* background: linear-gradient(rgb(255, 0, 85),rgb(234, 0, 255)); */
+    background-color: #091921;
+    position: relative;
+}
+
+body::after{
+  content: '';
+  position: absolute;
+  top: 17rem;
+  left: 28rem;
+  width: 7rem;
+  height: 7rem;
+  border-radius: 50%;
+  background: rgb(211, 50, 50);
+  transform: scale(1) rotate(0);
+  animation: backUp 3s infinite linear alternate;
+}
+body::before{
+  content: '';
+  position: absolute;
+  top: -17rem;
+  right: 28rem;
+  width: 8rem;
+  height: 8rem;
+  border-radius: 50%;
+  background: rgb(247, 3, 206);
+  transform: scale(1) rotate(0);
+  animation: backUp 3s infinite linear alternate;
+}
+
+@keyframes backUp {
+  
+  0%{transform: scale(1) rotate(360deg); top: 20rem;}
+  50%{transform: scale(1.5) rotate(360deg); top: 40rem;}
+  100%{transform: scale(1) rotate(360deg); top: 20rem;}
+
+
+}
+
+
+
+
+
+.container{
+  width: 50vw;
+  height: 50vh;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50% , -50%);
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: .6rem;
+  overflow: hidden;
+  z-index: 10000;
+  backdrop-filter: blur(1.5rem);
+  border-top: .1rem solid rgba(255, 255, 255, .2);
+  border-left: .1rem solid rgba(255, 255, 255, .2);
+  box-shadow: .5rem .5rem 3rem rgba(0,0,0,.2);
+}
+
+h4,
+h1 {
+  font-family: 'ubuntu';
+  font-size: 3rem;
+  letter-spacing: .4rem;
+  margin: 2rem;
+  text-transform: uppercase;
+  color: #fff;
+}
+.counter {
+  position: fixed;
+  overflow: hidden;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.counter.hide {
+  transform: translate(-50%, -50%) scale(0);
+  animation: hide 0.2s ease-out;
+}
+@keyframes hide {
+  0% {
+    transform: translate(-50%, -50%) scale(1);
+  }
+  100% {
+    transform: translate(-50%, -50%) scale(0);
+  }
+}
+.final {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  text-align: center;
+}
+.final button {
+  padding: 1rem 3rem;
+  font-size: 1.5rem;
+  cursor: pointer;
+  border-radius: 2rem;
+  background-color: transparent;
+  border: .1rem solid rgba(255, 255, 255, .2);
+  color: #fff;
+  outline: none;
+  position: relative;
+  overflow: hidden;
+  z-index: 1000;
+  transition: all .3s ease-in-out;
+}
+
+
+button:hover{
+
+  box-shadow: 0 0 2rem .2rem rgb(255, 0, 191);
+  border: none;
+
+
+}
+
+.final button:before{
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(255, 0, 191);
+  border-radius: 2rem;
+  top: 0;
+  left: -120%;
+  transition: all .3s ease-in-out;
+  z-index: -1;
+  /* box-shadow: 1rem 1rem 1rem  rgb(255, 0, 0); */
+  border-radius: 2rem;
+}
+
+
+
+.final button:hover::before{
+  left: 0;
+  
+}
+
+
+
+.final.show {
+  transform: translate(-50%, -50%) scale(1);
+  animation: show 0.2s ease-out;
+}
+@keyframes show {
+  0% {
+    transform: translate(-50%, -50%) scale(0);
+  }
+  30% {
+    transform: translate(-50%, -50%) scale(1.4);
+  }
+  100% {
+    transform: translate(-50%, -50%) scale(1);
+  }
+}
+
+.nums {
+  color: #fff;
+  font-size: 5rem;
+  position: relative;
+  overflow: hidden;
+  width: 25rem;
+  height: 5rem;
+  font-family: monospace;
+ 
+}
+.nums span {
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(160deg);
+  transform-origin: bottom center;
+
+}
+.nums span.in {
+  transform: translate(-50%, -50%) rotate(0deg);
+  animation: goIn 0.5s ease-in-out;
+}
+@keyframes goIn {
+  0% {
+    transform: translate(-50%, -50%) rotate(120deg);
+  }
+  30% {
+    transform: translate(-50%, -50%) rotate(-20deg);
+  }
+  60% {
+    transform: translate(-50%, -50%) rotate(20deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+}
+.nums span.out {
+  animation: goOut 0.5s ease-in-out;
+}
+@keyframes goOut {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  60% {
+    transform: translate(-50%, -50%) rotate(-20deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(-120deg);
+  }
+}

@@ -1,0 +1,72 @@
+*{
+  box-sizing: border-box;
+
+}
+
+html{
+  font-size: 62.5%;
+}
+
+body{
+  font-family: 'ubuntu';
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+}
+
+.container{
+  display: flex;
+  width: 90vw;
+
+
+}
+
+.panel{
+  /* background-size: auto 100%; */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 80vh;
+  border-radius: 5rem;
+  color: #000;
+  cursor: pointer;
+  flex: .6;
+  margin: 1rem;
+  position: relative;
+  border: .1rem solid #49465a;;
+  transition: all .6s ease-in;
+  
+}
+
+.panel h3{
+  font-size: 2rem;
+  position: absolute;
+  bottom: 2rem;
+  left: 2rem;
+  margin: 0;
+  opacity: 0;
+  transition: all .4s ease-in;
+
+}
+
+.panel.active{
+  flex: 5;
+}
+
+.panel.active h3{
+  opacity: 1;
+}
+
+@media(max-width:48rem){
+  .container{
+    width: 100vw;
+  }
+
+  .panel:nth-of-type(4) , .panel:nth-of-type(5){
+    display: none;
+  }
+
+  }

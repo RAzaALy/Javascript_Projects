@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="fontawesome-free-5.15.2-web/css/all.min.css"
+    />
+    <title>Get Your Meal</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Get Your Meal</h1>
+      <div class="flex">
+        <form class="flex" id="submit">
+          <input
+            type="text"
+            id="search"
+            placeholder="Search for your favourite meals"
+            autocomplete="off"
+          />
+          <button class="searchBtn" type="submit">
+            <i class="fas fa-search"></i>
+          </button>
+        </form>
+        <button class="randomBtn" id="random">
+          <i class="fas fa-random"></i>
+        </button>
+      </div>
+      <div id="resultHeading"></div>
+      <div id="meals" class="meals" style="margin-bottom: 2rem;">
+        <!-- meal -->
+      </div>
+      <div id="singleMeal"></div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>

@@ -1,0 +1,90 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  height: 100vh;
+  overflow: hidden;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  background-color: #9e9e9e;
+}
+.sliderContainer {
+  position: relative;
+  overflow: hidden;
+  width: 100vw;
+  height: 100vh;
+}
+.leftSlide {
+  height: 100%;
+  width: 30%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: transform 0.5s ease-in-out;
+}
+.leftSlide > div {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  color: #fff;
+}
+.leftSlide h1 {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+  margin-top: -3rem;
+}
+.rightSlide {
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 30%;
+  width: 70%;
+  transition: transform 0.5s ease-in-out;
+}
+.rightSlide > div {
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center center;
+  height: 100%;
+  width: 100%;
+}
+button {
+  background-color: #fff;
+  border: none;
+  color: #aaa;
+  cursor: pointer;
+  font-size: 1.6rem;
+  padding: 1.5rem;
+  transition: all .3s ease-in-out;
+}
+button:hover {
+  color: #222;
+}
+button:focus {
+  outline: none;
+}
+.sliderContainer .actionBtn button {
+  position: absolute;
+  left: 30%;
+  top: 50%;
+  z-index: 100;
+}
+.sliderContainer .actionBtn .downBtn {
+  transform: translateX(-100%);
+  border-top-left-radius: 0.5rem;
+  border-bottom-left-radius: 0.5rem;
+}
+.sliderContainer .actionBtn .upBtn {
+  transform: translateY(-100%);
+  border-top-right-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+}

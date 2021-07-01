@@ -1,0 +1,141 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+html {
+  font-size: 62.5%;
+}
+body{
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+#popUp {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 3333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#pop {
+  width: 60rem;
+  height: 30rem;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("./img\ \(7\).png");
+  background-size: 100% 100%;
+  text-align: center;
+  box-shadow: 0.1rem 0.2rem 0.5rem 0.3rem white;
+}
+#heading {
+  /* like as margin-top */
+  /* transform: translateY(2rem); */
+  margin-top: 2rem;
+  color: white;
+  font-size: 3rem;
+}
+#email {
+  width: 60%;
+  padding: 1rem;
+  margin-top: 8rem;
+  margin-bottom: 4rem;
+  outline: none;
+  border-radius: 0.6rem;
+  border: none;
+}
+.submit{
+    margin-right: 2rem;
+    background-color: dodgerblue;
+    border: none;
+    outline: none;
+    padding: .8rem 1.8rem;
+    color: white;
+    cursor: pointer;
+}
+
+/* Css starts here for Quiz app */
+.main {
+  width: 100vw;
+  height: 100vh;
+  background-color: #f6f6f6;
+  display: grid;
+  place-items: center;
+}
+.center {
+  width: 80%;
+  height: auto;
+  background-color: white;
+  padding: 3rem 8rem;
+  border-radius: 1rem;
+  box-shadow: 0 1rem 1rem -0.6rem rgba(0, 0, 0, 0.4);
+}
+.center h2 {
+  font-size: 3.5rem;
+  font-weight: bold;
+  margin: 1rem 0 4rem 0;
+}
+
+.center li {
+  font-size: 2rem;
+  list-style: none;
+  margin-bottom: 1.5rem;
+}
+.center li label {
+  font-family: cursive;
+  font-weight: bold;
+  color: gray;
+}
+.center input {
+  cursor: pointer;
+  width: 2rem;
+  height: 2rem;
+}
+#submit,
+.btn {
+  outline: none;
+  text-transform: uppercase;
+  padding: 1rem 3rem;
+  font-size: 2rem;
+  font-weight: 400;
+  cursor: pointer;
+  display: block;
+  margin: auto;
+  border: none;
+  border-radius: 0.8rem;
+  color: white;
+  background-color: #74b9ff;
+  margin-top: 4rem;
+  letter-spacing: 0.3rem;
+  transition: all 0.5s ease-in-out;
+}
+#submit:hover {
+  background-color: gray;
+}
+#showScore {
+  background-color: #dfe6e9;
+  margin-top: 3rem;
+  padding: 3rem 4rem;
+  box-shadow: 0 1rem 1rem -0.6rem rgba(0, 0, 0, 0.4);
+  border-radius: 0.8rem;
+}
+#showScore h3 {
+  font-size: 3rem;
+  text-align: center;
+}
+#showScore .btn {
+  margin-top: 2rem;
+  background-color: #55efc4;
+  color: #2d3436;
+}
+#showScore .btn:hover {
+  background-color: #00b894;
+  color: white;
+}
+.scoreArea {
+  display: none;
+}

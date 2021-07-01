@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>🌐 Wall-Clock App</title>
+    <link rel="stylesheet" href="./fontawesome-free-5.15.2-web/css/all.min.css">
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body onload="updateClock(); setInterval('updateClock()',1000)">
+    <div class="toggleContainer">
+        <input type="checkbox" id="toggle" class="toggle" />
+        <label for="toggle" class="label">
+          <div class="ball"></div>
+        </label>
+    </div>
+    <div class="mode"><strong>Dark Mode <i class="fas fa-moon"></i> </strong></div>
+
+    <div id="clockContainer">
+      <div id="hours"></div>
+      <div id="minutes"></div>
+      <div id="seconds"></div>
+    </div>
+    <div id="clock"></div>
+    <div class="date"></div>
+
+    <div id="alarmContainer">
+
+        <i class="fas fa-clock fa-4x" title="Set Alarm" id="alarmBtn" name="alarmBtn"></i>
+      </button>
+
+      <input
+      class="input"
+        type="datetime-local"
+        id="alarm"
+        name="alarm"
+        class="show"
+      />
+    </div>
+
+    <script src="clock.js"></script>
+  </body>
+</html>

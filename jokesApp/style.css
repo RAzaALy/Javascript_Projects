@@ -1,0 +1,68 @@
+@font-face {
+  font-family: ubuntu;
+  src: url("./font/Ubuntu-Medium.ttf");
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: ubuntu;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  overflow: hidden;
+  background-color: #5B5EA6;
+  padding: 2rem;
+}
+.container {
+  background-color: #485167;
+  color: #fff;
+  border-radius: 0.8rem;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1), 0 0.6rem 0.6rem rgba(0, 0, 0, 0.1);
+  padding: 4rem 2rem;
+  text-align: center;
+  width: 70rem;
+  max-width: 100%;
+}
+h3 {
+  margin: 0;
+  opacity: 0.5;
+  letter-spacing: 0.2rem;
+  font-size: 1.5rem;
+}
+.emoji {
+  margin-bottom: 1rem;
+  font-size: 3rem;
+}
+.joke {
+  font-size: 3rem;
+  letter-spacing: 0.1rem;
+  line-height: 4rem;
+  margin: 4rem auto;
+  max-width: 60rem;
+}
+.Btn {
+  background-color: #5B5EA6;
+  border: 0;
+  border-radius: 0.8rem;
+  color: #fff;
+  box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.1),
+    0 0.6rem 0.6rem rgba(0, 0, 0, 0.1);
+  padding: 1.4rem 4rem;
+  font-size: 1.6rem;
+  cursor: pointer;
+}
+.Btn:focus {
+  outline: none;
+}
+.Btn:active {
+  transform: scale(0.98);
+}

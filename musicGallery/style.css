@@ -1,0 +1,87 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+html {
+  font-size: 62.5%;
+}
+h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #444;
+  padding: 4rem 0;
+  text-transform: uppercase;
+  letter-spacing: 1rem;
+  text-shadow: 0 1px 0 #efefef, 0 2px 0 #efefef, 0 3px 0 #efefef,
+    0 4px 0 #efefef, 0 2rem 0.5rem rgba(0, 0, 0, 0.1);
+}
+main {
+  width: 90vw;
+  min-height: 150vh;
+  margin: 0 auto;
+  /* border: 1px solid #444; */
+  display: flex;
+  justify-content: space-around;
+  align-content: space-around;
+  flex-wrap: wrap;
+}
+div {
+  width: 28vw;
+  height: 25rem;
+  /* border: 1px solid red; */
+  cursor: pointer;
+  box-shadow: .2rem .2rem .5rem gray ;
+  border-radius: 1rem;
+  transition: all .2s linear;
+}
+div:hover{
+    transform: scale(1.1);
+}
+.a {
+  background-image: url("./images/img\ \(1\).jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+.b {
+  background-image: url("./images/img\ \(2\).jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+.c {
+  background-image: url("./images/img\ \(3\).jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+.d {
+  background-image: url("./images/img\ \(1\).png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+.e {
+  background-image: url("./images/img\ \(2\).png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+.f {
+  background-image: url("./images/img\ \(3\).png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+.g {
+  background-image: url("./images/img\ \(4\).png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+.h {
+  background-image: url("./images/img\ \(5\).png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+.i {
+  background-image: url("./images/img\ \(6\).png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
