@@ -1,4 +1,6 @@
 # Javascript Projects
+<p align="center" > 40+ 🚀🚀🚀 Java$cript Projects </p>
+
 ### 1 Array Methods
 <img src="https://imguploader.net/if/JvhmV56bMUpI.png" alt="img" />
 
@@ -116,8 +118,8 @@
 ### 38 Random Image
 <img src="https://imguploader.net/if/EPxKXm3xAVmP.png" alt="img" />
 
-### 39 scrambleGame
+### 39 Scramble Game
 <img src="https://imguploader.net/if/jVCTEtbXrKlB.png" alt="img" />
 
-### 40 typingMaster
+### 40 Typing Master
 <img src="https://imguploader.net/if/JVhMA99LqYMp.png" alt="img" />
