@@ -1,5 +1,5 @@
 # Javascript Projects
-<p align="center" > 40+ 🚀🚀🚀 Java$cript Projects </p>
+<h1 align="center" > 40+ 🚀🚀🚀 Java$cript Projects </h1>
 
 ### 1 Array Methods
 <img src="https://imguploader.net/if/JvhmV56bMUpI.png" alt="img" />
