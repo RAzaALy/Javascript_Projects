@@ -1,6 +1,7 @@
 # Javascript Projects
 ### 1 Array Methods
-<img src="https://imguploader.net/if/JvhmV56bMUpI.png" alt="img" /></br>
+<img src="https://imguploader.net/if/JvhmV56bMUpI.png" alt="img" />
+
 ### 2 Cart Page
 <img src="https://imguploader.net/if/sSVwel8L9s2E.png" alt="img" />
 ### 3 Clock
